@@ -1,0 +1,40 @@
+/* Fourth section drinks */
+
+.drinks .columns img {
+    height: 100%;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.drinks .drink-image {
+    position: relative;
+}
+
+.drinks .drink-image h3 {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .drinks {
+        padding: 0 30px;
+    }
+
+    .drinks .columns img {
+        height: 360px;
+
+    }
+
+    .drinks .drink-image h3 {
+        font-size: 18px;
+        top: 80%;
+    }
+}

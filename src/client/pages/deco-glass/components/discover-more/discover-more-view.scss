@@ -1,0 +1,30 @@
+/* eleventh section - Discover more */
+
+.discover-content {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.discover-content button {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 13px 15px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-size: 15px;
+}
+
+.discover-content button iconify-icon {
+    margin-left: 32px;
+}
+
+@media (max-width: 800px) {
+    .discover-content {
+        padding-bottom: 40px;
+    }
+}

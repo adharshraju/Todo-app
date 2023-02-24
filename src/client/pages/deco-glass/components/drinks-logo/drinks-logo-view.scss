@@ -1,0 +1,28 @@
+/* fifth section drinks logo */
+
+.drinks-logo {
+    padding: 80px 0;
+}
+
+.drinks-logo-images {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.drinks-logo-images img {
+    max-height: 60px;
+    max-width: 128px;
+    margin: 22px;
+}
+
+@media (max-width: 768px) {
+    .drinks-logo {
+        padding: 40px 0;
+    }
+
+    .drinks-logo-images img {
+        max-height: 50px;
+        max-width: 108px;
+    }
+}

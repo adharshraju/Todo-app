@@ -1,0 +1,26 @@
+/* Third section intro */
+
+.intro {
+    padding: 80px 0;
+}
+
+.intro h2 {
+    line-height: normal;
+}
+
+.intro p {
+    max-width: 870px;
+    text-align: center;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 80px 16px 44px;
+    }
+
+    .intro p {
+        max-width: 100%;
+        text-align: start;
+    }
+}

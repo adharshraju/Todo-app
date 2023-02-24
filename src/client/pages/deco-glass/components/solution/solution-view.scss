@@ -1,0 +1,53 @@
+/* Seventh section solutions */
+
+.solution {
+    padding: 120px 0;
+}
+
+.solution h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.solution .columns {
+    gap: 24px;
+}
+
+.solution .column {
+    position: relative;
+    background: linear-gradient(0deg, #0009 30%, #fff0);
+}
+
+.solution .column img {
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+    z-index: -10;
+}
+
+.solution .solution-image h3 {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .solution h2 {
+        font-size: 32px;
+        margin-bottom: 44px;
+    }
+
+    .solution .column img {
+        height: 360px;
+    }
+
+    .solution .solution-image h3 {
+        top: 70%;
+    }
+}

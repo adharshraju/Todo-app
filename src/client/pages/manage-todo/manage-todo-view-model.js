@@ -19,6 +19,7 @@ let ManageTodoViewModel = class ManageTodoViewModel extends n_app_1.PageViewMode
         this._todo = null;
         this._title = "";
         this._description = "";
+        this._date = "";
         this._validator = this._createValidator();
     }
     get isNew() { return this._isNew; }
@@ -26,6 +27,8 @@ let ManageTodoViewModel = class ManageTodoViewModel extends n_app_1.PageViewMode
     set title(value) { this._title = value; }
     get description() { return this._description; }
     set description(value) { this._description = value; }
+    get date() { return this._date; }
+    set date(value) { this._date = value; }
     get hasErrors() { return !this._validate(); }
     get errors() { return this._validator.errors; }
     save() {
@@ -35,9 +38,9 @@ let ManageTodoViewModel = class ManageTodoViewModel extends n_app_1.PageViewMode
                 return;
             try {
                 if (this._todo)
-                    yield this._todo.update(this._title, this._description);
+                    yield this._todo.update(this._title, this._description, this._date);
                 else
-                    yield this._todoService.createTodo(this._title, this._description);
+                    yield this._todoService.createTodo(this._title, this._description, this._date);
             }
             catch (e) {
                 console.log(e);
@@ -54,6 +57,7 @@ let ManageTodoViewModel = class ManageTodoViewModel extends n_app_1.PageViewMode
                 this._todo = t;
                 this._title = t.title;
                 this._description = t.description || "";
+                this._date = t.date || "";
             })
                 .catch(e => console.log(e));
         }
@@ -77,6 +81,10 @@ let ManageTodoViewModel = class ManageTodoViewModel extends n_app_1.PageViewMode
             .isOptional()
             .isString()
             .useValidationRule(n_validate_1.strval.hasMaxLength(500));
+        validator
+            .prop("date")
+            .isOptional()
+            .isString();
         return validator;
     }
 };

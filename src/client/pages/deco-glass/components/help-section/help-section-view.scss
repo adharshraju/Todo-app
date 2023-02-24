@@ -1,0 +1,80 @@
+/* ninth section - help */
+
+.help {
+    padding: 120px 0 80px;
+    position: relative;
+}
+
+.help .help-text {
+    max-width: 760px;
+    margin: auto;
+}
+
+.help .help-text h2 {
+    font-size: 70px;
+    margin-bottom: 48px;
+    line-height: 1;
+}
+
+.help .btn {
+    display: flex;
+}
+
+.help button {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 13px 15px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+.help-bg-color {
+    position: absolute;
+    top: 43%;
+    margin-left: -5%;
+    z-index: -1;
+    width: 95%;
+    height: 40%;
+    background-color: #f5f5f5;
+}
+
+
+@media (min-width: 768px) {
+    .help .help-h2-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .help {
+        padding: 80px 16px 40px;
+    }
+
+    .help .help-h2-desktop {
+        display: none;
+    }
+
+    .help .help-text h2 {
+        font-size: 50px;
+    }
+
+    .help .btn {
+        display: block;
+    }
+
+    .help img {
+        display: none;
+    }
+
+    .help-bg-color {
+        top: 24%;
+        width: 102%;
+        margin-left: -5%;
+        z-index: -1;
+        height: 75%;
+    }
+}

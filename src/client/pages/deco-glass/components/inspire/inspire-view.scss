@@ -1,0 +1,44 @@
+/* tenth section - inspire */
+
+.inspire {
+    padding: 80px 0 40px;
+}
+
+.inspire .column img {
+    height: 50vh;
+    max-height: 640px;
+    max-width: 600px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.inspire .text {
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.inspire .text .title {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.inspire .text .tags {
+    font-size: 15px;
+    color: #a2a2a2;
+}
+
+@media (max-width: 768px) {
+    .inspire {
+        padding: 80px 30px 40px;
+    }
+
+    .inspire h2 {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .inspire .column img {
+        height: 35vh;
+    }
+}
