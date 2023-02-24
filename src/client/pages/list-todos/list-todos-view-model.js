@@ -14,7 +14,20 @@ let ListTodosViewModel = class ListTodosViewModel extends n_app_1.PageViewModel 
         this._todoService = todoService;
         this._todos = [];
     }
-    get todos() { return this._todos.where(t => !t.isDeleted); }
+    get todos() {
+        const sortedTodos = this._todos.slice().sort((a, b) => {
+            if (a.date && b.date) {
+                return new Date(a.date).getTime() - new Date(b.date).getTime();
+            }
+            else if (a.date) {
+                return -1;
+            }
+            else {
+                return 1;
+            }
+        });
+        return sortedTodos.where(t => !t.isDeleted);
+    }
     onCreate() {
         super.onCreate();
         console.log("on Create, when the Vm is created, but the template has not been mounted in the DOM.");

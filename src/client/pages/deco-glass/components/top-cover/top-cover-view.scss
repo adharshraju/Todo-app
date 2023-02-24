@@ -1,0 +1,82 @@
+/* Second section top cover */
+
+.top-cover {
+    position: relative;
+    height: 800px;
+    background-image: url(../../../../images/cover-background-black-tower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.top-cover .navbar {
+    background-color: transparent;
+}
+
+/* positioning icons */
+
+.top-cover .top-cover-heading {
+    position: relative;
+    height: 700px;
+}
+
+.top-cover .top-cover-heading h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.top-cover .arrow {
+    display: flex;
+    position: absolute;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-cover .nav-arrow-left {
+    right: 0;
+    top: 45%;
+    height: 48px;
+    width: 48px;
+}
+
+.top-cover .nav-arrow-right {
+    right: 0;
+    top: 53%;
+    height: 48px;
+    width: 48px;
+}
+
+.top-cover .scroll-arrow {
+    left: 50%;
+    bottom: -15px;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .top-cover .top-cover-heading h1 {
+        top: 35%;
+        left: 0;
+        font-size: 40px;
+        padding-left: 16px;
+    }
+
+    .top-cover .nav-arrow-left {
+        right: 15%;
+        top: 94%;
+    }
+
+    .top-cover .nav-arrow-right {
+        right: 0;
+        top: 94%;
+    }
+}

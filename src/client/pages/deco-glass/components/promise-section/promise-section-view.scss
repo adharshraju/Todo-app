@@ -1,0 +1,41 @@
+/* Eighth section our promise  */
+
+.promise-section img {
+    max-height: 660px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.promise-section .right-size {
+    padding: 200px 0;
+    width: 55%;
+    margin-left: 100px;
+}
+
+.promise-section button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 14px 18px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-size: 14px;
+}
+
+.promise-section button iconify-icon {
+    margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+    .promise-section img {
+        height: 360px;
+    }
+
+    .promise-section .right-size {
+        padding: 60px 16px 40px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

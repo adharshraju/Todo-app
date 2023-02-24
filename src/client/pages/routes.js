@@ -7,4 +7,5 @@ class Routes {
 exports.Routes = Routes;
 Routes.listTodos = "/todos";
 Routes.manageTodo = "/manage?{id?:string}";
+Routes.decoGlass = "/deco";
 //# sourceMappingURL=routes.js.map
